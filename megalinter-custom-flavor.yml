@@ -1,0 +1,15 @@
+---
+# MegaLinter Custom Flavor configuration
+# If you update it manually, run `npx mega-linter-runner --custom-flavor-setup` to propagate updates.
+label: Clojure
+linters:
+  - BASH_SHELLCHECK
+  - CLOJURE_CLJSTYLE
+  - CLOJURE_CLJ_KONDO
+  - DOCKERFILE_HADOLINT
+  - MAKEFILE_CHECKMAKE
+  - MARKDOWN_MARKDOWN_TABLE_FORMATTER
+  - MARKDOWN_RUMDL
+  - REPOSITORY_BETTERLEAKS
+  - SPELL_LYCHEE
+  - YAML_V8R
