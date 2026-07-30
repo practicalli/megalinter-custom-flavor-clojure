@@ -4,6 +4,8 @@ This custom MegaLinter aims to have an optimized Docker image size.
 
 It is built from official MegaLinter images, but is maintained on https://github.com/practicalli/megalinter-custom-flavor-clojure by Practicalli Engineering
 
+Beta push
+
 ## Embedded linters
 
   - [BASH_SHELLCHECK](https://megalinter.io/latest/descriptors/bash_shellcheck/)
