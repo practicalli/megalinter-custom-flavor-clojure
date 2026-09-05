@@ -6,23 +6,22 @@ It is built from official MegaLinter images, but is maintained on https://github
 
 ## Embedded linters
 
-  - [BASH_SHELLCHECK](https://megalinter.io/latest/descriptors/bash_shellcheck/)
-  - [CLOJURE_CLJSTYLE](https://megalinter.io/latest/descriptors/clojure_cljstyle/)
-  - [CLOJURE_CLJ_KONDO](https://megalinter.io/latest/descriptors/clojure_clj_kondo/)
-  - [DOCKERFILE_HADOLINT](https://megalinter.io/latest/descriptors/dockerfile_hadolint/)
-  - [MAKEFILE_CHECKMAKE](https://megalinter.io/latest/descriptors/makefile_checkmake/)
-  - [MARKDOWN_MARKDOWN_TABLE_FORMATTER](https://megalinter.io/latest/descriptors/markdown_markdown_table_formatter/)
-  - [MARKDOWN_RUMDL](https://megalinter.io/latest/descriptors/markdown_rumdl/)
-  - [REPOSITORY_BETTERLEAKS](https://megalinter.io/latest/descriptors/repository_betterleaks/)
-  - [SPELL_LYCHEE](https://megalinter.io/latest/descriptors/spell_lychee/)
-  - [YAML_V8R](https://megalinter.io/latest/descriptors/yaml_v8r/)
+- [BASH_SHELLCHECK](https://megalinter.io/latest/descriptors/bash_shellcheck/)
+- [CLOJURE_CLJSTYLE](https://megalinter.io/latest/descriptors/clojure_cljstyle/)
+- [CLOJURE_CLJ_KONDO](https://megalinter.io/latest/descriptors/clojure_clj_kondo/)
+- [DOCKERFILE_HADOLINT](https://megalinter.io/latest/descriptors/dockerfile_hadolint/)
+- [MARKDOWN_MARKDOWN_TABLE_FORMATTER](https://megalinter.io/latest/descriptors/markdown_markdown_table_formatter/)
+- [MARKDOWN_RUMDL](https://megalinter.io/latest/descriptors/markdown_rumdl/)
+- [REPOSITORY_BETTERLEAKS](https://megalinter.io/latest/descriptors/repository_betterleaks/)
+- [SPELL_LYCHEE](https://megalinter.io/latest/descriptors/spell_lychee/)
+- [YAML_V8R](https://megalinter.io/latest/descriptors/yaml_v8r/)
 
 ## How to use the custom flavor
 
 Follow [MegaLinter installation guide](https://megalinter.io/latest/install-assisted/), and replace related elements in the workflow.
 
-- GitHub Action: On MegaLinter step in .github/workflows/mega-linter.yml, define `uses: practicalli/megalinter-custom-flavor-clojure@main`
-- Docker image: Replace official MegaLinter image with `ghcr.io/practicalli/megalinter-custom-flavor-clojure/megalinter-custom-flavor:latest`
+- **GitHub Action**: On MegaLinter step in `.github/workflows/mega-linter.yml`, define `uses: practicalli/megalinter-custom-flavor-clojure@main`
+- **Docker image**: Replace official MegaLinter image with `ghcr.io/practicalli/megalinter-custom-flavor-clojure/megalinter-custom-flavor:latest`
 
 ## How the flavor is generated and updated
 
@@ -61,6 +60,7 @@ See the [Custom Flavors documentation](https://megalinter.io/beta/custom-flavors
 ### Optional: Docker Hub publishing
 
 To publish to Docker Hub in addition to ghcr.io, configure:
+
 - `DOCKERHUB_REPO` variable (e.g., your Docker Hub username)
 - `DOCKERHUB_USERNAME` secret
 - `DOCKERHUB_PASSWORD` secret
@@ -75,11 +75,10 @@ If you need to manually trigger a build:
 
 See [full Custom Flavors documentation](https://megalinter.io/beta/custom-flavors/).
 
-## How to use the custom flavor
+## License
 
-Follow [MegaLinter installation guide](https://megalinter.io/latest/install-assisted/), and replace related elements in the workflow.
+A MegaLinter custom flavor is still MegaLinter: this repository and the Docker image it publishes are covered by the [AGPL-3.0 license](https://github.com/oxsecurity/megalinter/blob/main/LICENSE).
 
-- **GitHub Action**: On MegaLinter step in `.github/workflows/mega-linter.yml`, define `uses: practicalli/megalinter-custom-flavor-clojure@main`
-- **Docker image**: Replace official MegaLinter image with `ghcr.io/practicalli/megalinter-custom-flavor-clojure/megalinter-custom-flavor:latest`
+The published image is built from the official MegaLinter image and bundles MegaLinter, whose source is available at [oxsecurity/megalinter](https://github.com/oxsecurity/megalinter).
 
-[![MegaLinter is graciously provided by OX Security](https://raw.githubusercontent.com/oxsecurity/megalinter/main/docs/assets/images/ox-banner.png)](https://www.ox.security/?ref=megalinter)
+[![MegaLinter is provided by OX Security](https://raw.githubusercontent.com/oxsecurity/megalinter/main/docs/assets/images/ox-banner.png)](https://www.ox.security/?ref=megalinter)

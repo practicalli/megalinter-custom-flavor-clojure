@@ -7,3 +7,4 @@
 ## Changed
 
 - build(megalinter): 🔧 remove checkmake lint tool
+- build(megalinter): 🔧 update custom flavor using mega-linter-runner
